@@ -1,0 +1,97 @@
+.mv__h0 {
+  font: 300 32px/40px "Roboto", "Roboto Light", sans-serif;
+
+  @include mq("desktop", "phone") {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @include mq("phone") {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.mv__h1 {
+  font: 300 44px/56px "Roboto", "Roboto Light", sans-serif;
+
+  @include mq("desktop", "phone") {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @include mq("phone") {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.mv__h2 {
+  font: 300 60px/60px "Roboto", "Roboto Light", sans-serif;
+
+  @include mq("desktop", "phone") {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  @include mq("phone") {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.mv__h3 {
+  font: 300 24px/32px "Roboto", "Roboto Light", sans-serif;
+
+  @include mq("desktop") {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.mv__textLead {
+  font: 300 20px/28px "Roboto", "Roboto Light", sans-serif;
+
+  @include mq("desktop") {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  & > p {
+    font: inherit;
+    margin-bottom: 0;
+  }
+
+  & > p + p {
+    margin-top: 30px;
+
+    @include mq("desktop") {
+      margin-top: 8px;
+    }
+  }
+}
+
+.mv__text {
+  font: 300 14px/24px "Roboto", "Roboto Light", sans-serif;
+
+  a {
+    font: inherit;
+    text-decoration: none;
+    color: #2d9cdb;
+  }
+
+  @include mq("desktop", "phone") {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mq("phone") {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--grey a {
+    color: $gray3;
+    border-bottom: 1px solid $grey9;
+  }
+}

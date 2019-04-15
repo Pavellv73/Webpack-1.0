@@ -1,0 +1,19 @@
+.mv__container {
+  padding-left: vw(1920, 148);
+  padding-right: vw(1920, 148);
+
+  @include mq("desktop", "tablet") {
+    padding-left: vw(1366, 113);
+    padding-right: vw(1366, 113);
+  }
+
+  @include mq("tablet", "phone") {
+    padding-left: vw(768, 62);
+    padding-right: vw(768, 62);
+  }
+
+  @include mq("phone") {
+    padding-left: vw(320, 20);
+    padding-right: vw(320, 20);
+  }
+}
